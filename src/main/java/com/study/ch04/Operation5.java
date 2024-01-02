@@ -35,6 +35,9 @@ public class Operation5 {
     int age = 30;
     // System.out.println(40 > age && age > 20); // 잘못된 표기법. 비교대상이 앞으로 간다.
         System.out.println(age< 40&&age >20&&age !=30);
+        System.out.println("테스트  코드 작성.");
+
+
 
 
 
