@@ -1,6 +1,7 @@
 package com.study.ch04;
 
 public class Operation5 {
+    {
  /*
         << 연산자 >>
 
@@ -28,7 +29,7 @@ public class Operation5 {
 
 
 
-        System.out.println("논리연산자");
+       System.out.println("논리연산자");
         System.out.println(505%5==0&&505%50!=0);
         System.out.println(505%5==0||505%50==0);
         System.out.println(!(505%5==0||505%50==0));
@@ -38,12 +39,7 @@ public class Operation5 {
         System.out.println("테스트  코드 작성.");
 
 
-
-
-
-
-
-
+}
 }
 
 
