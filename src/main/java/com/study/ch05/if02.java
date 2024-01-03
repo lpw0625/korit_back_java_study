@@ -1,9 +1,18 @@
 package com.study.ch05;
 
+import java.util.Scanner;
+
 public class if02 {
     public static void main(String[] args) {
-        int x = -1;
-        int y = -2;
+
+        Scanner scanner = new Scanner(System.in);
+        int x = 0;
+        int y = 0;
+
+        System.out.print("x와 y를 입력해주세요(띄어쓰기 구분): ");
+        x = scanner.nextInt();
+        y = scanner.nextInt();
+
 
         if(x == 0 || y == 0) {
 
