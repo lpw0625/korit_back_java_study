@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class ProductMain {
 
+    // 순서는 메인 >> 서비스 >> 레퍼지토리 >> 디비 >> 레퍼지토리 >> 서비스 >> 메인
+
     public static void main(String[] args) {
 
         ProductService productService = new ProductService();
