@@ -12,7 +12,7 @@ public class Company {
         public static Company getInstance() {
         if(instance == null) {
             instance = new Company();
-        } // 스태틱이 아님에도 주소 호출이 가능. 주소값이 있기 때문.
+        } // 스태틱이 아님에도 주소 호출이 가능. 주소값이 있기 때문.싱클톤"
 
         return instance; // 마지막은 리턴 인스턴스
 

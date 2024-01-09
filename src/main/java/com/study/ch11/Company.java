@@ -8,7 +8,13 @@ public class Company {
     }
 
     void showCompanyInfo() {
-        System.out.println("회사명 " + name);
+        System.out.println("회사명: " + name);
+    }
 
+    @Override
+    public String toString() {
+        return "Company{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }

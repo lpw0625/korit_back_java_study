@@ -1,7 +1,10 @@
 package com.study.ch12.b;
 
+import com.study.ch12.a.Student;
 public class BMain {
     public static void main(String[] args) {
-        Studnet studnet = new Studnet();
+        Student student = new Student();
+        student.test();
     }
 }
+

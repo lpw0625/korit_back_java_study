@@ -7,7 +7,7 @@ public class FactoryService1 {
        private Scanner scanner;
 
 
-public FactoryService1(Scanner scanner, Factory factory ) {
+public FactoryService1(Scanner scanner) {
     this.scanner = scanner;
 
 }
