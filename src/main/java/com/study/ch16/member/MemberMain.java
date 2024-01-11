@@ -43,6 +43,7 @@ public class MemberMain {
             selectedMenu = scanner.nextLine();
 
             if ("q".equalsIgnoreCase(selectedMenu)) {
+                break;
 
 
             } else if ("1".equals(selectedMenu)) {
@@ -56,6 +57,7 @@ public class MemberMain {
 
                 String name = null;
                 String address = null;
+
                 System.out.println("{회원 등록하기}");
                 System.out.println("이름 >> ");
                 name = scanner.nextLine();
@@ -80,6 +82,7 @@ public class MemberMain {
                 Member findMember = findMemberByName(searchName);
                 if(findMember == null) {
                     System.out.println("해당 이름의 회원이 존재하지 않습니다.");
+                    continue;
                 }
                 System.out.print("이름 >> ");
                 String updateName = scanner.nextLine();
@@ -99,10 +102,11 @@ public class MemberMain {
                 Member findMember = findMemberByName(searchName);
                 if(findMember == null) {
                     System.out.println("해당 이름의 회원이 존재하지 않습니다.");
+                    continue;
                 }
                 System.out.print("주소 >> ");
-                String updateName = scanner.nextLine();
-                findMember.setName(updateName);
+                String updateAddress = scanner.nextLine();
+                findMember.setAddress(updateAddress);
                 System.out.println("<< 수정이 완료되었습니다. >> ");
 
             } else if ("4.".equals(selectedMenu)) {
@@ -115,7 +119,7 @@ public class MemberMain {
                     */
 
                 String searchName = null;
-                System.out.println("[회원 이름으로 수정하기]");
+                System.out.println("[회원 이름으로 조회하기]");
                 searchName = inputSearchName("조회할 회원의 이름을 입력하세요");
 
                 //System.out.println("조회 할 회원의 이름을 입력하세요. >> ");
@@ -143,6 +147,7 @@ public class MemberMain {
                     System.out.println(member);
 
                 }
+                System.out.println("조회가 완료되었습니다.");
 
 
             } else if ("6".equals(selectedMenu)) {
@@ -182,5 +187,6 @@ public class MemberMain {
 // 순서 1(등록) >> 5(전체조회) >> 4(부분조회) >> 6(삭제 조회) >> 2 >> 3
 
         }
+        System.out.println("프로그램을 종료 합니다.");
     }
 }
